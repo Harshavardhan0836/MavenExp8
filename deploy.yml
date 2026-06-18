@@ -2,7 +2,6 @@
 - name: Deploy Maven Artifact
   hosts: localhost
 
-
   tasks:
 
     - name: Ensure deployment directory exists
@@ -13,6 +12,6 @@
 
     - name: Copy artifact
       copy:
-        src: /D:/CERTIFICATES/DevOps8/target/DevOps8-1.0-SNAPSHOT.jar
+        src: /mnt/c/Users/harsh/.jenkins/workspace/HelloMaven-CI/target/DevOps8-1.0-SNAPSHOT.jar
         dest: /home/admin1/deployment/DevOps8.jar
         remote_src: yes

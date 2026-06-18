@@ -1,7 +1,7 @@
 ---
 - name: Deploy Maven Artifact
   hosts: localhost
-  become: yes
+
 
   tasks:
 
@@ -13,6 +13,6 @@
 
     - name: Copy artifact
       copy:
-        src: /var/lib/jenkins/workspace/HelloMaven-CI/target/HelloMaven-1.0-SNAPSHOT.jar
-        dest: /home/YOUR_USERNAME/deployment/HelloMaven.jar
+        src: /D:/CERTIFICATES/DevOps8/target/DevOps8-1.0-SNAPSHOT.jar
+        dest: /home/admin1/deployment/DevOps8.jar
         remote_src: yes
